@@ -13,6 +13,12 @@ class Program
         Console.WriteLine(laptop.GetBrand);
         laptop.Charge();
         laptop.TurnOff();
+        Phone phone2 = new Phone("Samsung", 91 );
+        Console.WriteLine(phone2.GetBrand);
+        Console.WriteLine(phone2.GetBatteryLevel);
+        phone2.AddBatteryLevel(30);
+        
+        
             
 
     }

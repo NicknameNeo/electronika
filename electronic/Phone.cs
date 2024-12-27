@@ -1,6 +1,6 @@
 using System;
 using electronic;
-class Phone : E_Device
+class  Phone : E_Device
 {
     public Phone()
     {
@@ -8,5 +8,15 @@ class Phone : E_Device
         BatteryLevel = 19;
         TurnOn();
     }
-            
+
+    public Phone(string brand, int batteryLevel)
+    {
+        GetBrand = brand;
+        GetBatteryLevel = batteryLevel;
+        
+    }
+
+   
+
+
 }

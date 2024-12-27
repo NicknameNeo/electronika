@@ -37,6 +37,15 @@ namespace electronic
             BatteryLevel++;
             Console.WriteLine($"{Brand} is charged on {BatteryLevel}% Battery");
         }
+
+        public void AddBatteryLevel(int level)
+        {
+            BatteryLevel += level;
+            if (BatteryLevel > 100) BatteryLevel = 100;
+            Console.WriteLine($"{Brand} is charged on {BatteryLevel}% Battery");
+        }
         
     }
+    
+   
 }
